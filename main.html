@@ -12,78 +12,18 @@
 
 <body>
 	<form>
-<div class="container border my-3">
+	<div class="container border my-3">
       <h3 style="font-weight:bold" class="heading mx=0 my-4">Internship Form</h3>
         <div class="row my-4">
             <div class="col-4">
               <label for="first-name-input" class="form-label">First Name</label>
-              <input type="text"  id="first-name-input" class="form-control " aria-label="First name">
-             </div>
-            <div class="col-4">
-             <label for="last-name-input" class="form-label">Last Name</label>
-              <input type="text"  id="last-name-input"  class="form-control "  aria-label="Last name">
-             
-            </div>
-            <div class="col-4">
-              <label for="email" class="form-label">Email Adress</label>
-              <input type="email"  id="email-input"  class="form-control " placeholder="xyz@abc.com">
-            
-            </div>
-          </div>
-          <div class="row my-4">
-            <div class="col-6">
-                <label for="collage" class="form-label">Collage</label>
-                <input type="text"   id="college-input" class="form-control " aria-label="First name">
-                
-              </div>
-              <div class="col-3">
-              <label for="graduation-year" class="form-label">Graduation Year</label>
-              <select class="form-select  " aria-label="Default select example" >
-                <option selected>choose...</option>
-                <option value="1">2020</option>
-                <option value="2">2021</option>
-                <option value="3">2022</option>
-                <option value="3">2023</option>
-              </select>
-            
-              </div>
-              <div class="col-3">
-              <label for="roll-no" class="form-label">Roll No</label>
-              <input type="text"  id="roll-no-input"  class="form-control ">
-              
-              </div>
-          </div>
-          <div class="row my-4">
-            <div class="col-12">
-                <div class="form-check">
-                  <input class="form-check-input "   id="conditions-input" type="checkbox" value="" id="invalidCheck3" aria-describedby="invalidCheck3Feedback" required>
-                  <label class="form-check-label" for="invalidCheck3">
-                    Agree to terms and conditions
-                  </label>
-                 
-                </div>
-              </div>
-          </div>
-          <div class="row my-4">
-            <div class="col-12">
-                <button class="btn btn-primary" type="submit">Submit form</button>
-              </div>
-          </div>
-    </div>
-
-	
-	 <div class="container border my-3">
-      <h3 style="font-weight:bold" class="heading mx=0 my-4">Internship Form</h3>
-        <div class="row my-4">
-            <div class="col-4">
-              <label for="first-name-input" class="form-label">First Name</label>
-              <input type="text"  id="first-name-input" class="form-control is-invalid" aria-label="First name">
+              <input type="text"  id="first-name-input" class="form-control is-invalid" required  aria-label="First name">
               <div id="validationServer03Feedback" class="invalid-feedback">
                 First name required!
               </div>
             </div>
             <div class="col-4">
-             <label for="last-name" class="form-label">Last Name</label>
+             <label for="last-name-input" class="form-label">Last Name</label>
               <input type="text"  id="last-name-input"  class="form-control is-invalid"  aria-label="Last name">
               <div id="validationServer03Feedback" class="invalid-feedback">
                 Last name required!
@@ -107,7 +47,7 @@
               </div>
               <div class="col-3">
               <label for="graduation-year" class="form-label">Graduation Year</label>
-              <select class="form-select is-invalid " aria-label="Default select example" >
+              <select class="form-select is-invalid " id="graduation-year" aria-label="Default select example" >
                 <option selected>choose...</option>
                 <option value="1">2020</option>
                 <option value="2">2021</option>
@@ -119,7 +59,7 @@
               </div>
               </div>
               <div class="col-3">
-              <label for="roll-no" class="form-label">Roll No</label>
+              <label for="roll-no-input" class="form-label">Roll No</label>
               <input type="text"  id="roll-no-input"  class="form-control is-invalid">
               <div id="validationServer03Feedback" class="invalid-feedback">
                 please provide a valid college!
@@ -129,7 +69,7 @@
           <div class="row my-4">
             <div class="col-12">
                 <div class="form-check">
-                  <input class="form-check-input is-invalid"   id="conditions-input" type="checkbox" value="" id="invalidCheck3" aria-describedby="invalidCheck3Feedback" required>
+                  <input class="form-check-input is-invalid"   id="conditions-checkbox" type="checkbox" value="" id="invalidCheck3" aria-describedby="invalidCheck3Feedback" required>
                   <label class="form-check-label" for="invalidCheck3">
                     Agree to terms and conditions
                   </label>
